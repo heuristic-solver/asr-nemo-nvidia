@@ -29,3 +29,4 @@ Sample Testing can be done by using the following command
 ```bash
 curl -X POST "http://localhost:8000/transcribe" -F "file=@audio.wav"
 ```
+Additionally you can go to http://localhost:8000/docs to manually upload the .wav speech file to test it out. 
