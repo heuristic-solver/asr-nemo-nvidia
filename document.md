@@ -14,4 +14,12 @@ This project implements a Hindi Automatic Speech Recognition (ASR) system using 
 #Issues Encountered 
 1. NumPy Compatibility Error with NeMo:
     Version mismatch between numpy and the compiled NeMo modules occured. I refered the original github repo for nemo and updated numpy version to fix the issue.
-2. 
+2. Preprocessing Not Included in ONNX Export: To fix this I used Nemo's preprocessor module manually before sending input into the onnx model for inference.
+3. Output from ONNX Model: The onnx model output was simply probabilities which had to be decoded into text for which the vocabulary used for training the model had to be retrieved manually
+   from the library.
+4. Build Errors:  Created and isolated the project in a virtual environment (venv) to manage dependencies safely and avoid conflicts with system-wide packages. This however was not an issue
+   after using docker.
+
+# Limitations
+I had considered quantization for further optimization but did not have enough time to do so. Given a few more days, the model could have been optimized better for memory and cpu usage. 
+
