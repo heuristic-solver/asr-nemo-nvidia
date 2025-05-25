@@ -9,7 +9,7 @@ from nemo.collections.asr.models import ASRModel
 nemo_model = ASRModel.restore_from("stt_hi_conformer_ctc_medium.nemo")
 preprocessor = nemo_model.preprocessor.eval()
 vocab = list(nemo_model.decoder.vocabulary)
-
+nemo_model.export("stt_hi_conformer_ctc_medium.onnx")
 # Load ONNX runtime session once
 ort_sess = ort.InferenceSession("stt_hi_conformer_ctc_medium.onnx")
 input_name_1 = ort_sess.get_inputs()[0].name
