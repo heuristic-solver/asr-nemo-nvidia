@@ -43,4 +43,4 @@ or if you are on windows powershell you can try
 curl.exe -X POST "http://localhost:8000/transcribe" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@your_audio_path.wav"
 ```
 
-Additionally you can go to http://localhost:8000/docs after running main.py using uvicorn to manually upload the .wav speech file to test it out. 
+(Optional) You can go to http://localhost:8000/docs after running main.py using uvicorn to manually upload the .wav speech file to test it out. 
