@@ -25,3 +25,7 @@ docker build -t asr-api .
 docker run -p 8000:8000 asr-api
 ```
 
+Sample Testing can be done by using the following command 
+```bash
+curl -X POST "http://localhost:8000/transcribe" -F "file=@audio.wav"
+```
