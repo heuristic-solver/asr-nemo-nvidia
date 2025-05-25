@@ -2,9 +2,9 @@
 This project implements a Hindi ASR system using NVIDIA's NeMo ASR model and ONNX Runtime for fast inference. The NeMo model is responsible for audio preprocessing and vocabulary handling, while the exported ONNX model ensures lightweight and efficient inference in production environments. 
 
 # Features Implemented 
-1. Conversion of the NeMo .nemo model into an optimized .onnx model for optimized inference.
+1. Conversion of the NeMo .nemo model into a .onnx model for optimized inference.
 
-2. Audio preprocessing using NeMo’s built-in Mel Spectrogram preprocessor which was manually applied post-export due to input errors to model.
+2. Audio preprocessing using NeMo’s built-in Mel Spectrogram preprocessor which was manually applied post export due to input errors to model.
 
 3. Resampling of input audio files to match the expected 16kHz sample rate.
 
