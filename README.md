@@ -19,6 +19,11 @@ curl -L 'https://api.ngc.nvidia.com/v2/models/org/nvidia/team/nemo/stt_hi_confor
 ```bash
 docker build -t asr-api .
 ```
+or 
+
+```bash
+docker build --no-cache -t asr-app .
+```
 
 ### 4. Run the container 
 ```bash
