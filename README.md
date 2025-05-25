@@ -36,11 +36,11 @@ docker run -it -p 8000:8000 asr-app
 
 Sample Testing can be done by using the following command 
 ```bash
-curl -X POST "http://localhost:8000/transcribe" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@speech_hi.wav"
+curl -X POST "http://localhost:8000/transcribe" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@your_audio_path.wav"
 ```
 or if you are on windows powershell you can try 
 ```bash
-curl.exe -X POST "http://localhost:8000/transcribe" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@speech_hi.wav"
+curl.exe -X POST "http://localhost:8000/transcribe" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@your_audio_path.wav"
 ```
 
 Additionally you can go to http://localhost:8000/docs to manually upload the .wav speech file to test it out. 
