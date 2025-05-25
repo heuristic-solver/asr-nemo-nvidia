@@ -29,6 +29,10 @@ docker build --no-cache -t asr-app .
 ```bash
 docker run -p 8000:8000 asr-api
 ```
+or 
+```bash
+docker run -it -p 8000:8000 asr-app
+```
 
 Sample Testing can be done by using the following command 
 ```bash
