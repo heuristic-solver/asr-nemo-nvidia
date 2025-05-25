@@ -12,6 +12,6 @@ This project implements a Hindi Automatic Speech Recognition (ASR) system using 
 5. FastAPI was used to make a web API of the application.
 
 #Issues Encountered 
-1. NumPy Compatibility Error with NeMo
+1. NumPy Compatibility Error with NeMo:
     Version mismatch between numpy and the compiled NeMo modules occured. I refered the original github repo for nemo and updated numpy version to fix the issue.
 2. 
